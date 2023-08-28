@@ -1,0 +1,41 @@
+.body{
+    background-color: azure;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-left: 20vw;
+    padding-top: 15vh;
+    padding-right: 20vw;
+}
+
+.h1{
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+.h3{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.Source-Station{
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.Destination-Station{
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.Payment-Method{
+    text-align: center;
+    font-weight: bold;
+}

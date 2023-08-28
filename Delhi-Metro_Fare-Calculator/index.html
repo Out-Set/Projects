@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body">
+    <h1 class="h1">Welcome to Delhi Metro</h2>
+    
+    <div class="container">
+        <h3 class="h3">Calculate fair between two Metro Stations</h3>
+        <div>
+        <div class="Source-Station">
+            Source Station <select name="" id="sourceStation">
+                <option value="default">Select Source</option>
+            </select>
+        </div>
+
+        <div class="Destination-Station">
+            Destination Station <select name="" id="destStation">
+                <option value="default" id="">Select Destination</option>
+            </select>
+        </div>
+        </div><br>
+
+        <div class="Payment-Method">
+            Payment Method<select name="" id="payMethod">
+                <option value="select">Select</option>
+                <option value="card" id="card">Card</option>
+                <option value="token" id="token">Token</option>
+            </select>
+        </div><br>
+
+        <div class="fare">
+            <form action="">
+                <input type="text" id="fare" disabled>
+            </form>
+        </div>
+
+        <div class="calculateFare">
+            <button id="Calculate-Fare" onclick="calculateFare()">Calculate Fare</button>
+        </div>
+    </div>
+
+    <script src="calculateFare.js"></script>
+</body>
+</html>
