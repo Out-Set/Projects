@@ -6,6 +6,7 @@
 <script>
 
     import HeaderComp from './Header.vue';
+
     export default{
         name:'HomeComp',
         data(){
@@ -17,7 +18,7 @@
             HeaderComp
         },
         mounted(){
-            let user = localStorage.getItem('user-info');
+            let user = localStorage.getItem("userInfo");
             this.name=JSON.parse(user).name
             if(!user){
                 this.$router.push({name:'SignUp'})

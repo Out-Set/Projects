@@ -1,10 +1,12 @@
 <template>
+
     <div class="nav">
-        <route-link to="/">Home Page</route-link>
-        <route-link to="add">Add Restaurant</route-link>
-        <route-link to="home">Update Restaurant</route-link>
+        <route-link to="/" href="#">Home Page</route-link>
+        <route-link to="/add" href="#">Add Restaurant</route-link>
+        <route-link to="/update" href="#">Update Restaurant</route-link>
         <route-link v-on:click="logout" href="#">Logout</route-link>
     </div>
+    
 </template>
 
 <script>

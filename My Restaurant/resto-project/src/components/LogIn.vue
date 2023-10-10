@@ -29,16 +29,16 @@
                     `http://localhost:8082/byEmailAndPass?email=${this.email}&password=${this.password}`
                 );
 
-                if(result.status==200 || result.status==201 || result.data.length > 0){
+                if(result.status==200 || result.status==201 && result.data.length > 0){
 
                     // Saving Data to Local Storage
-                    localStorage.setItem("user-info", JSON.stringify(result.data[0]))
+                    localStorage.setItem("userInfo", JSON.stringify(result.data[0]))
                     this.$router.push({name:'Home'})
                 }
             }
         },
         mounted(){
-            let user = localStorage.getItem('user-info');
+            let user = localStorage.getItem("userInfo");
             if(user){
                 this.$router.push({name:'Home'})
             }

@@ -38,13 +38,13 @@
                 if(result.status==201 || result.status==200){
 
                     // Saving Data to Local Storage
-                    localStorage.setItem("user-info", JSON.stringify(result))
+                    localStorage.setItem("userInfo", JSON.stringify(result))
                     this.$router.push({name:'Home'})
                 }                
             }
         },
         mounted(){
-            let user = localStorage.getItem('user-info');
+            let user = localStorage.getItem("userInfo");
             if(user){
                 this.$router.push({name:'Home'})
             }
