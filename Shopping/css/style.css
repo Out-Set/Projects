@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.social-links{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    background: lightblue;
+}
+
+.header{
+    height: 50px;
+    background: violet;
+    display: flex;
+}
+.logo{
+    width: 10%;
+}
+.name{
+    width: 80%;
+    text-align: center;
+}
+
+.nav-bar{
+    background: gray;
+    padding: 10px 10px 10px 0px;
+    align-items: center;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+}
+.nav-bar a:hover{
+    color: white;
+    background: blue;
+}

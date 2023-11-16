@@ -1,0 +1,5 @@
+Note:
+----------
+
+If npm is not being installed on clonig the repo, install forcefully: $npm install --force
+
