@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-.social-links{
+.social-links {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
@@ -12,30 +12,113 @@
     background: lightblue;
 }
 
-.header{
+.header {
     height: 50px;
     background: violet;
     display: flex;
 }
-.logo{
+
+.logo {
     width: 10%;
 }
-.name{
+
+.name {
     width: 80%;
     text-align: center;
 }
 
-.nav-bar{
+.nav-bar {
     background: gray;
     padding: 10px 10px 10px 0px;
     align-items: center;
 }
-.nav-bar a{
+
+.nav-bar a {
     text-decoration: none;
     font-size: large;
     padding: 10px;
 }
-.nav-bar a:hover{
+
+.nav-bar a:hover {
     color: white;
     background: blue;
 }
+
+.slider {
+    padding: 250px;
+    background: url('../images/b1.jpg');
+    animation: data 5s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+}
+
+@keyframes data {
+    0% {
+        background: url('../images/b2.jpeg');
+    }
+
+    30% {
+        background: url('../images/b3.jpg');
+    }
+
+    60% {
+        background: url('../images/b1.jpg');
+    }
+
+    100% {background: url('../images/b4.jpg');}
+}
+
+.product-container{
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 20% 80%; */
+}
+
+.left ul{list-style: none; margin: 20px;}
+.left li{background: lightblue; text-align: center; padding: 17px 0px; margin-top: 3px;}
+.left #mycat{background: purple; color: white; font-size: 2vmax;}
+.left ul button{padding: 10px; border-radius: 3px;}
+.left ul button:hover{
+    background: brown;
+    color: white;
+}
+
+.left{
+    width: 20%;
+    float: left;
+}
+
+.right{
+    margin-top: 20px;
+    width: 80%;
+    float: left;
+    /* display: grid;
+    grid-template-columns: auto auto auto auto; */
+}
+
+.row::after{content: ""; clear: both; display: table;}
+
+.col-1{width:8.33%}
+.col-2{width:16.66%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
+
+@media only screen and (max-width:992px){
+    .sicon{display: none;}
+    .product{width:50%}
+    .blog{width: 50%;}
+}
+
+@media only screen and (max-width:768px){
+    .menu a{display: block; text-align: center;}
+    .left,.right{width: 100%; text-align: center;}
+    .product-container{width: 100%; text-align: center;}
+} 
