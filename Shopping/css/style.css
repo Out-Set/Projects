@@ -12,6 +12,11 @@
     background: lightblue;
 }
 
+.links i, .contact i{
+    margin: 15px;
+}
+
+
 .header {
     height: 50px;
     background: violet;
@@ -20,6 +25,11 @@
 
 .logo {
     width: 10%;
+
+}
+.logo img{
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .name {
@@ -46,32 +56,35 @@
 
 .slider {
     padding: 250px;
-    background: url('../images/b1.jpg');
+    background: url('../images/bg2.jpeg');
     animation: data 5s;
     animation-iteration-count: infinite;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 @keyframes data {
-    0% {
-        background: url('../images/b2.jpeg');
-    }
+    0% {background: url('../images/bg3.jpeg');}
 
-    30% {
-        background: url('../images/b3.jpg');
-    }
+    33% {background: url('../images/bg4.jpeg');}
 
-    60% {
-        background: url('../images/b1.jpg');
-    }
-
-    100% {background: url('../images/b4.jpg');}
+    100% {background: url('../images/bg1.jpeg');}
 }
 
 .product-container{
     width: 100%;
     /* display: grid;
     grid-template-columns: 20% 80%; */
+}
+
+#topBtn{
+    padding: 8px 20px;
+    background-color: paleturquoise;
+    position: fixed;
+    top: 400px;
+    left: 96%;
+    display: block;
 }
 
 .left ul{list-style: none; margin: 20px;}
@@ -112,13 +125,10 @@
 .col-12{width:100%}
 
 @media only screen and (max-width:992px){
-    .sicon{display: none;}
     .product{width:50%}
-    .blog{width: 50%;}
 }
 
 @media only screen and (max-width:768px){
-    .menu a{display: block; text-align: center;}
     .left,.right{width: 100%; text-align: center;}
     .product-container{width: 100%; text-align: center;}
 } 
